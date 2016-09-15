@@ -1,0 +1,576 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="偶尔会在新闻网站上看到这样的新闻，全球最大黑客组织anonymous，攻破某大型公司的服务器，并盗走了大量的用户数据，最后还不忘恶作剧一下，在该公司主页上留下代表自己身份的记号。诸如此类新闻，给我们平淡的生活增添了不少浪漫主义色彩。怀着一股英雄情怀，我们也幻想着成为他们的一员，去完成和他们一样，超越生活常规之外的有趣事迹。我们想要追随他们的踪迹，哪怕从他们身上学到一丝一毫也是值得的。但是他们到底">
+<meta property="og:type" content="article">
+<meta property="og:title" content="另一半网络：暗网">
+<meta property="og:url" content="http://yoursite.com/2016/09/09/另一半网络--暗网探秘/index.html">
+<meta property="og:site_name" content="伊卡洛斯的巴别塔">
+<meta property="og:description" content="偶尔会在新闻网站上看到这样的新闻，全球最大黑客组织anonymous，攻破某大型公司的服务器，并盗走了大量的用户数据，最后还不忘恶作剧一下，在该公司主页上留下代表自己身份的记号。诸如此类新闻，给我们平淡的生活增添了不少浪漫主义色彩。怀着一股英雄情怀，我们也幻想着成为他们的一员，去完成和他们一样，超越生活常规之外的有趣事迹。我们想要追随他们的踪迹，哪怕从他们身上学到一丝一毫也是值得的。但是他们到底">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-16412db14f812c7c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-97b3799b54eeb879.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-e92cda2af6641b83.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-7aa446db7b671f2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-3b389bda6adeccef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-48bd61d7581f4295.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-09-15T11:23:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="另一半网络：暗网">
+<meta name="twitter:description" content="偶尔会在新闻网站上看到这样的新闻，全球最大黑客组织anonymous，攻破某大型公司的服务器，并盗走了大量的用户数据，最后还不忘恶作剧一下，在该公司主页上留下代表自己身份的记号。诸如此类新闻，给我们平淡的生活增添了不少浪漫主义色彩。怀着一股英雄情怀，我们也幻想着成为他们的一员，去完成和他们一样，超越生活常规之外的有趣事迹。我们想要追随他们的踪迹，哪怕从他们身上学到一丝一毫也是值得的。但是他们到底">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1163089-16412db14f812c7c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/09/另一半网络--暗网探秘/"/>
+
+  <title> 另一半网络：暗网 | 伊卡洛斯的巴别塔 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">伊卡洛斯的巴别塔</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">未知是已知的，而其它皆未知</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                另一半网络：暗网
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-09-09T12:40:03+08:00" content="2016-09-09">
+              2016-09-09
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/1163089-16412db14f812c7c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>偶尔会在新闻网站上看到这样的新闻，全球最大黑客组织anonymous，攻破某大型公司的服务器，并盗走了大量的用户数据，最后还不忘恶作剧一下，在该公司主页上留下代表自己身份的记号。诸如此类新闻，给我们平淡的生活增添了不少浪漫主义色彩。怀着一股英雄情怀，我们也幻想着成为他们的一员，去完成和他们一样，超越生活常规之外的有趣事迹。<br>我们想要追随他们的踪迹，哪怕从他们身上学到一丝一毫也是值得的。但是他们到底生活在网络的哪个角落？大多数人不得而知。其实啊，他们都活在网络的深处——暗网。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-97b3799b54eeb879.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="暗网"><br>“暗网”，顾名思义，就是人们无法轻易找寻到的神秘网站。通过任何你所已知的搜索引擎都搜索不到。假如把我们日常所浏览的网站比作陆地，那么暗网则是广袤无垠的海底世界。那里是阳光照不到的地方，一切罪恶都在那里躲藏。<br>为了找寻黑客的足迹，我毅然决然地决定进入到那个充满罪恶的地方（夸张手法），想看看暗网到底隐藏着多少的黑暗与惊喜。几番寻觅，我终于找到进入暗网的入口。来不及多探索一些，我就特地写下这篇文章，领你加入我的行列，一起进入这个神秘的世界。</p>
+<p>想进入暗网，需要借助vpn，和tor浏览器。<br>有关vpn的搭建，可以参考我写的《<a href="http://www.jianshu.com/p/a625eb9c6a11" target="_blank" rel="external">教你搭建vpn</a>》<br>打开你电脑上的vpn，拜访这个网站<a href="https://www.torproject.org/" target="_blank" rel="external">https://www.torproject.org/</a><br>下载关键道具tor浏览器。<br><img src="http://upload-images.jianshu.io/upload_images/1163089-e92cda2af6641b83.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="tor官网"><br>点击download Tor就可以下载了。点击桌面图标,打开tor浏览器</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-7aa446db7b671f2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>选择connect，直接连接。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-3b389bda6adeccef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>连接完成之后，就可以进入tor浏览器主页面了</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-48bd61d7581f4295.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>你可以谷歌搜索或者上国外的贴吧reddit上搜索暗网链接。复制到tor浏览器地址栏，进行浏览。<br>相信这会是你人生中不一样的体验。在罪恶的边缘观摩，与死神插肩而过的快感，将被你体验到。罪恶的金钱交易将刺裸裸地展现在你面前，人们用比特币相互传送资本，购买毒品，枪支，色情服务。你还会看到变态狂与种族主义者的大胆言论，偷窥者讲述自己的事迹，黑客在网络中售卖自己的服务,你也可以在暗网的聊天室和神秘的网友聊天，在暗网的社交网络和别人互通有无。为了保证交流的保密性，你需要对你的文字进行加密后，才能发送。你将学会如何搭建属于自己的暗网。你还可以购买到真正有用的黑客知识。</p>
+<p>为了保持神秘感，我点到为止。想尝试的自己去操作。其实tor只是暗网的一种形式，常见的形式还有i2p，freenet。这些都是去中心化网络系统。充满好奇心的人儿可以自行搜索</p>
+<p>最后，我值得留下这样一个思考问题：何为恶者，何为善者？这其中是否有一条泾渭分明的界限。<br>大恶之人常隐于暗处，无辜之人常身陷囚笼，我们通过什么来分辨他们，将正义带到这个世界。还有一连串的思索即将被触发。比如法律在暗网这个特殊形式的网络中，变得形同虚设，那么法律到底是否是绝对公平的？如果是公平的，那如何让罪人得到判决，无论他躲在何处。还有关于科技的弊端性的思考，当它的进步让人们更加肆无忌惮，罪恶的元凶变得更加无处寻觅，我们又如何应对呢？假如我们为了抓捕暗网的罪犯，而将网络追踪技术改良，这样一代又一代的道高一尺魔高一丈的“军备竞赛”，难道不是在凭空浪费资源吗？等等思考应运而生。</p>
+<p>暗网值得一去，无论出于何种目的。作为观摩者的你，并没有犯罪。而作为正义的守护者的人儿，他们没有能够斩灭罪恶，不知道对他们来说，是不是一种变相的罪恶。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/09/简题-用文字再造一个迷你简书（简书新玩法探索－互动性）/" rel="next" title="简题：用文字再造一个迷你简书">
+                <i class="fa fa-chevron-left"></i> 简题：用文字再造一个迷你简书
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/09/十年歌手名录：薛之谦在想什么？/" rel="prev" title="十年歌手名录：薛之谦">
+                十年歌手名录：薛之谦 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="翁岚敏" />
+          <p class="site-author-name" itemprop="name">翁岚敏</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">翁岚敏</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
