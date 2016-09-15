@@ -1,0 +1,597 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="简书是个标题党遍地的地方，相信你深有体会。那一篇篇标题诱人内容却一塌糊涂的文章，在愚弄着你的智商，消耗着你的时间，蚕食着你的耐性，也一遍遍地刷新着你对简书这个网站的评价底线。请原谅我的耿直，实话实说。看着主页每天上架的一篇又一篇鸡汤文，我实在无法拍手叫好。希望简书能出来干点事情，不要让鸡汤文毁灭简书的口碑。在简书采取行动之前，我来告诉你一个切实有效的办法。让你在不点开文章的情况下，就知道文章的好">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在点开前就知道文章的好坏？">
+<meta property="og:url" content="http://yoursite.com/2016/09/09/如何在点开前就知道文章的好坏？/index.html">
+<meta property="og:site_name" content="伊卡洛斯的巴别塔">
+<meta property="og:description" content="简书是个标题党遍地的地方，相信你深有体会。那一篇篇标题诱人内容却一塌糊涂的文章，在愚弄着你的智商，消耗着你的时间，蚕食着你的耐性，也一遍遍地刷新着你对简书这个网站的评价底线。请原谅我的耿直，实话实说。看着主页每天上架的一篇又一篇鸡汤文，我实在无法拍手叫好。希望简书能出来干点事情，不要让鸡汤文毁灭简书的口碑。在简书采取行动之前，我来告诉你一个切实有效的办法。让你在不点开文章的情况下，就知道文章的好">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-8e982c7530e37f4c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-a584c75e5757985b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-83570fd1e2adc5da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-959b324b40a27c8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-a1788246ae35eb2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-4b366ef0ede611a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-931ea050236dc770.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-d8db87b1c8f614d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-55eaad1a2988f93b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-7303bc328a96a49e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1163089-cdbfca1e5e254344.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-09-15T15:44:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何在点开前就知道文章的好坏？">
+<meta name="twitter:description" content="简书是个标题党遍地的地方，相信你深有体会。那一篇篇标题诱人内容却一塌糊涂的文章，在愚弄着你的智商，消耗着你的时间，蚕食着你的耐性，也一遍遍地刷新着你对简书这个网站的评价底线。请原谅我的耿直，实话实说。看着主页每天上架的一篇又一篇鸡汤文，我实在无法拍手叫好。希望简书能出来干点事情，不要让鸡汤文毁灭简书的口碑。在简书采取行动之前，我来告诉你一个切实有效的办法。让你在不点开文章的情况下，就知道文章的好">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1163089-8e982c7530e37f4c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/09/如何在点开前就知道文章的好坏？/"/>
+
+  <title> 如何在点开前就知道文章的好坏？ | 伊卡洛斯的巴别塔 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">伊卡洛斯的巴别塔</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">翁岚敏个人分享博客</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何在点开前就知道文章的好坏？
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-09T12:40:03+08:00" content="2016-09-09">
+              2016-09-09
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/09/如何在点开前就知道文章的好坏？/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/09/如何在点开前就知道文章的好坏？/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/1163089-8e982c7530e37f4c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>简书是个标题党遍地的地方，相信你深有体会。那一篇篇标题诱人内容却一塌糊涂的文章，在愚弄着你的智商，消耗着你的时间，蚕食着你的耐性，也一遍遍地刷新着你对简书这个网站的评价底线。请原谅我的耿直，实话实说。看着主页每天上架的一篇又一篇鸡汤文，我实在无法拍手叫好。希望简书能出来干点事情，不要让鸡汤文毁灭简书的口碑。在简书采取行动之前，我来告诉你一个切实有效的办法。让你在不点开文章的情况下，就知道文章的好坏。</p>
+<p>#其实方法很简单，也很好理解。就是看 喜欢数和阅读数的比值。<br>聪明的你应该很快就理解了我的意思。喜欢数和阅读数的比值，说的通俗一点，就是计算文章被喜欢的概率大小。如果一篇文章的比值是0.05，那就代表着平均20个点开的人里面，有一个喜欢了这篇文章。这种计算看似简单，其实代表了读者对这篇文章最为客观的评价。比起通过标题来判断文章是否值得一读，这种纯理性的评判标准更为可行，也更科学。值得提醒的是，这个评判标准，是充分不必要的。也就是说，好文章不一定会符合这个标准，但是符合标准的一定是好文章。由于题材或者内容的深度不同，有的文章会出现曲高和寡的现象，对于这些文章，我们不能用这个标准来评判。<br>但是我认为在阅读量达到一定程度的情况下，这个评判标准是绝对可行的。也就是说，我们可以拿这个标准来判断主页上任何一篇文章的好坏。因为能上主页的任何一篇文章，都不存在曲高和寡的问题，它们之所以能出现在主页上就是为了迎合大众最普遍的口味以及帮简书刷点击率。讨论量子力学的文章不可能出现在上面。</p>
+<p>喜欢数和阅读数的比值到底要设置成什么呢？你可以根据自己的容忍度来调节。我个人将它设置成0.1。也就是说平均每10个阅读的人就有1个点了喜欢。0.1到底意味着多高的质量？ 想想你平时的阅读习惯，是不是随便点开一篇之后，稍微滑动几下，就关上了。这种情况是常见的，所以但凡不是极度优秀的文章，不可能在每10个人中就获得1个喜欢。</p>
+<p>#现在我来演示一下，让我们打开简书的主页吧。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-a584c75e5757985b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>这篇是我在主页上看到的第一篇文章，应该是个简书签约作家写的，因为我经常看到他的文章出现在主页上。<br>让我来计算一下这篇文章的质量，喜欢数／阅读数：239/4822＝0.04958<br>是我设置的0.1这个标准的一半，也就是说平均20个阅读人里面有一个人点了喜欢。所以以0.1为标准的判断下，它不算好文章。但是如果你的标准是0.05，那么这篇文章就值得你去阅读。</p>
+<p>ok，让我们在30天热门中找一篇测试一下。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-83570fd1e2adc5da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>喜欢数／阅读数：4281/49078=0.08927<br>这个指数是很高的了，它接近我设置的0.1的标准，我会尝试点开它，并认真阅读。如果你设置的标准是0.05，那么它是相当值得你去读的。</p>
+<p>你一定会觉得我的标准很苛刻，你找遍了主页上的所有文章，似乎只有一篇能达到这个标准。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-959b324b40a27c8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>这篇是我写的文章，希望你不会对我的自吹自擂感到不适。让我来计算一下我的这篇30日热门文章的质量。<br>喜欢数／阅读数：2234/21403=0.1044<br>超过了0.1的标准。<br>通过我前面的叙述，以及比较。你应该能够理解我这篇文章的质量是多么高。还是那句话，希望你不要反感我的自吹自擂，我已经陈述了我的理由，而且这个理由是具有说服力的。</p>
+<p>我总共写了5篇英语教学文章，来看看它们的整体质量。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-a1788246ae35eb2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>喜欢数／阅读数＝93/958=0.098</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-4b366ef0ede611a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>喜欢数／阅读数＝0.073</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-931ea050236dc770.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>喜欢数／阅读数＝0.087</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-d8db87b1c8f614d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>喜欢数／阅读数＝0.051</p>
+<p>以上是我写的英语学习类文章。除了最后一篇每一篇的质量都是很高的。为什么最后一篇的得分只有0.051，这和我自己的体会其实是一致的，在这篇文章里面我犯的最大的错误是敷衍，并没有深入去介绍每一个软件。而是在稍微介绍了几个之后，在文章末尾，将剩下的软件全部抛出，叫读者自己去百度。这是一种不负责任的态度。所以只获得了0.051的成绩。<br>但是很明显0.051依旧高于简书中大部分文章的得分。</p>
+<p>再来看看我有关阅读方面的文章<br><img src="http://upload-images.jianshu.io/upload_images/1163089-55eaad1a2988f93b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>喜欢数／阅读数＝0.089</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-7303bc328a96a49e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>喜欢数／阅读数＝0.097（这一篇并没有上主页）<br>质量都是出奇的高。</p>
+<p>写到这里大家应该理解我要表达的意思，其一是你可以通过我介绍的方法来判断一篇文章的好坏。其二是我的文章质量真的很高。其三是通过这种方法你就可以知道主页中的文章有多少是虚有其表。</p>
+<p>当写到这里时，我突然又想到了一点：到底要把好文章的标准比值设置在哪里呢？其实可以将它设置成30日热文的平均比值。因为30日热文算是简书中质量高的了。<br>我来替你们计算一下。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1163089-cdbfca1e5e254344.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>平均数是0.055<br>你们可以以0.05为标准，来进行判断了。当然不需要精确计算，稍微看看就可以算出个大概。<br>希望能对你有启发。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/09/心中的巴别塔与宿命的孤独/" rel="next" title="心中的巴别塔与宿命的孤独">
+                <i class="fa fa-chevron-left"></i> 心中的巴别塔与宿命的孤独
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/09/宇宙中存在三个你/" rel="prev" title="宇宙中存在三个你">
+                宇宙中存在三个你 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/09/如何在点开前就知道文章的好坏？/"
+           data-title="如何在点开前就知道文章的好坏？" data-url="http://yoursite.com/2016/09/09/如何在点开前就知道文章的好坏？/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://i0.hdslb.com/bfs/archive/db9e5a92bf248cbafa18727b3e1d5ed2fdd59b0d.jpg"
+               alt="翁岚敏" />
+          <p class="site-author-name" itemprop="name">翁岚敏</p>
+          <p class="site-description motion-element" itemprop="description">未知是已知的，而其它皆未知</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">翁岚敏</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wenglanmin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
